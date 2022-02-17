@@ -1,5 +1,5 @@
 import React from "react";
-import {useSearchParams} from 'react-router-dom'
+import {useSearchParams, NavLink, Outlet} from 'react-router-dom'
 
 const users = ["John", "Kane", "Tom", "Jerry", "Roman", "Catalina", "Julia"];
 
@@ -29,7 +29,9 @@ function AdminUsers() {
       <ul>
         {users.filter(user => user.toLowerCase().includes(searchTerm.toLowerCase()))
         .map((user, i) => (
-          <li key={i}>{user}</li>
+          <li key={i}>
+            <NavLink to={"/admin/adminusers/" + user }>{user}</NavLink>
+          </li>
         ))}
       </ul>
     </div>
