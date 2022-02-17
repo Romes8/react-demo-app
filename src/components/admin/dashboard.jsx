@@ -1,11 +1,21 @@
 import React from "react";
+import {NavLink, Outlet} from 'react-router-dom';
 
-const Dashboard = ({ match }) => {
-  return (
+function Dashboard() {
+  return(
     <div>
-      <h1>Admin Dashboard</h1>
+      <h1>Dashboard</h1>
+      <ul>
+        <li>
+          <NavLink to ="adminposts/">Posts</NavLink>
+        </li>
+        <li>
+          <NavLink to ="adminusers/">Users</NavLink>
+        </li>
+      </ul>
+      <Outlet></Outlet>
     </div>
-  );
-};
+  )
+}
 
 export default Dashboard;

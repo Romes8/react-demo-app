@@ -6,6 +6,8 @@ import PostsYear from "./components/postsYear";
 import PostsMonth from "./components/postsMonth";
 import Home from "./components/home";
 import Dashboard from "./components/admin/dashboard";
+import AdminPosts from "./components/admin/adminposts";
+import AdminUsers from "./components/admin/adminusers";
 import ProductDetails from "./components/productDetails";
 import NotFound from "./components/notFound";
 import {Route, Routes, Outlet} from 'react-router-dom';
@@ -27,7 +29,10 @@ class App extends Component {
                 <Route path=":month" element={<PostsMonth />}></Route>
               </Route>
             </Route>   
-            <Route path="/admin" element={<Dashboard />}></Route>
+            <Route path="/admin" element={<Dashboard />}>
+              <Route path="adminposts" element={<AdminPosts />}></Route>
+            </Route>
+            <Route path="/admin/adminusers" element={<AdminUsers />}></Route>
             <Route path="/" element={<Home />}></Route>
           </Routes>
         </div>

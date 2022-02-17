@@ -12,10 +12,10 @@ function NavBar() {
           <Link to="/products">Products</Link>
         </li>
         <li class="nav-item dropdown">
-        <Link to="/posts">Posts</Link>
+          <Link to="/posts">Posts</Link>
         </li>
         <li class="nav-item dropdown">
-        <Link to="/admin">Admin</Link>
+          <Link to="/admin">Admin</Link>
         </li>
       </ul>
     </div>
