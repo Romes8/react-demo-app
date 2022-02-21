@@ -16,3 +16,7 @@ Go to **Pagination.jsx** for syntax and usage
 
 # Search params 
 Go to **adminusers.jsx** for syntax and usage 
+
+#  LIVE
+
+for live version hosted on heroku: https://react-demo-app-fs.herokuapp.com/
